@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>American Roofing & Construction | Free Quote | Licensed Florida Contractor</title>
+<meta name="description" content="Licensed and insured roofing, restoration and construction contractor serving Central and North Florida. 24/7 storm response. Free quotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy-dark:#061335;
+  --navy:#152650;
+  --navy-light:#1e3567;
+  --red:#d40c1a;
+  --red-dark:#a90915;
+  --gold:#d49824;
+  --white:#ffffff;
+  --gray-bg:#f4f6fa;
+  --gray-border:#e2e6ee;
+  --text:#1a2035;
+  --text-muted:#5b6478;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--text);line-height:1.6;background:var(--white);}
+h1,h2,h3,h4{font-family:'Oswald',Impact,sans-serif;font-weight:700;line-height:1.15;letter-spacing:.3px;}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;}
+.section{padding:72px 0;}
+.section-alt{background:var(--gray-bg);}
+.eyebrow{display:inline-block;color:var(--red);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;}
+.section-head{max-width:680px;margin:0 auto 44px;text-align:center;}
+.section-head h2{font-size:clamp(28px,3.6vw,40px);color:var(--navy-dark);margin-bottom:14px;}
+.section-head p{color:var(--text-muted);font-size:17px;}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;letter-spacing:.3px;padding:15px 28px;border-radius:6px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;text-align:center;justify-content:center;}
+.btn:hover{transform:translateY(-2px);}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 6px 18px rgba(212,12,26,.35);}
+.btn-red:hover{background:var(--red-dark);}
+.btn-outline{background:transparent;border-color:#ffffff55;color:#fff;}
+.btn-outline:hover{background:#ffffff15;}
+.btn-navy{background:var(--navy-dark);color:#fff;}
+.btn-block{width:100%;}
+/* utility bar */
+.utility-bar{background:var(--navy-dark);color:#cfd6e8;font-size:13px;padding:8px 0;}
+.utility-bar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;}
+.utility-bar a{color:#fff;font-weight:600;}
+.utility-bar .tags{display:flex;gap:18px;flex-wrap:wrap;}
+.utility-bar .tags span{display:inline-flex;align-items:center;gap:6px;}
+/* header */
+header.main-nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 14px rgba(6,19,53,.08);}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;gap:20px;}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand img{height:48px;width:auto;}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-links a{font-weight:600;font-size:15px;color:var(--navy-dark);}
+.nav-links a:hover{color:var(--red);}
+.nav-cta{display:flex;align-items:center;gap:14px;}
+.nav-phone{display:flex;flex-direction:column;text-align:right;}
+.nav-phone small{color:var(--text-muted);font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;}
+.nav-phone a{font-family:'Oswald',sans-serif;font-size:19px;font-weight:600;color:var(--navy-dark);}
+#menu-toggle{display:none;}
+.menu-toggle-label{display:none;cursor:pointer;font-size:26px;color:var(--navy-dark);}
+@media(max-width:900px){
+  .nav-links{position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:0 24px;max-height:0;overflow:hidden;transition:max-height .25s ease;box-shadow:0 10px 20px rgba(6,19,53,.08);}
+  .nav-links a{padding:14px 0;width:100%;border-top:1px solid var(--gray-border);}
+  #menu-toggle:checked ~ .nav-links{max-height:420px;padding-bottom:14px;}
+  .menu-toggle-label{display:block;}
+  .nav-phone{display:none;}
+}
+/* hero */
+.hero{position:relative;background:linear-gradient(120deg,var(--navy-dark) 0%,var(--navy) 55%,var(--navy-light) 100%);color:#fff;overflow:hidden;padding:64px 0 90px;}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 85% 20%,rgba(212,152,36,.18),transparent 45%),radial-gradient(circle at 10% 85%,rgba(212,12,26,.16),transparent 45%);pointer-events:none;}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:8px 16px;border-radius:30px;font-size:13px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:22px;}
+.hero h1{font-size:clamp(34px,4.6vw,54px);margin-bottom:18px;}
+.hero h1 .accent-gold{color:var(--gold);}
+.hero h1 .accent-red{color:#ff5b62;}
+.hero p.lead{font-size:18px;color:#dbe0ee;max-width:520px;margin-bottom:26px;}
+.hero-stats{display:flex;gap:34px;margin:30px 0 10px;flex-wrap:wrap;}
+.hero-stats .stat b{display:block;font-family:'Oswald',sans-serif;font-size:30px;color:var(--gold);}
+.hero-stats .stat span{font-size:13px;color:#c6cee2;text-transform:uppercase;letter-spacing:.4px;}
+.hero-cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px;}
+.hero-badges{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px;font-size:13.5px;color:#c6cee2;}
+.hero-badges span{display:flex;align-items:center;gap:6px;}
+/* quote card */
+.quote-card{background:#fff;color:var(--text);border-radius:14px;padding:30px;box-shadow:0 25px 60px rgba(0,0,0,.35);position:relative;}
+.quote-card h3{font-size:22px;color:var(--navy-dark);margin-bottom:4px;}
+.quote-card .sub{font-size:14px;color:var(--text-muted);margin-bottom:20px;}
+.form-row{margin-bottom:14px;}
+.form-row label{display:block;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--navy-dark);margin-bottom:6px;}
+.form-row input,.form-row select,.form-row textarea{width:100%;padding:12px 14px;border:1.5px solid var(--gray-border);border-radius:7px;font-size:15px;font-family:inherit;background:#fbfcfe;}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{outline:none;border-color:var(--navy);background:#fff;}
+.consent-text{font-size:11.5px;color:var(--text-muted);margin-top:12px;line-height:1.5;}
+.consent-text a{color:var(--navy);text-decoration:underline;}
+/* services */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.service-card{background:#fff;border:1px solid var(--gray-border);border-radius:12px;padding:30px 26px;transition:box-shadow .2s ease,transform .2s ease;}
+.service-card:hover{box-shadow:0 18px 40px rgba(6,19,53,.1);transform:translateY(-4px);}
+.icon-box{width:54px;height:54px;border-radius:10px;background:linear-gradient(135deg,var(--navy-dark),var(--navy-light));display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+.icon-box svg{width:26px;height:26px;stroke:var(--gold);}
+.service-card h3{font-size:19px;color:var(--navy-dark);margin-bottom:8px;}
+.service-card p{color:var(--text-muted);font-size:14.5px;margin-bottom:14px;}
+.service-card .link{color:var(--red);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:6px;}
+/* testimonials */
+.testimonial{background:var(--navy-dark);color:#fff;border-radius:14px;padding:34px 38px;margin-top:50px;display:flex;gap:24px;align-items:flex-start;}
+.testimonial .stars{color:var(--gold);font-size:18px;letter-spacing:2px;margin-bottom:10px;}
+.testimonial p{font-size:17px;color:#e4e8f3;font-style:italic;margin-bottom:14px;}
+.testimonial .cite{font-weight:700;font-size:14px;color:var(--gold);}
+.testimonial .cite span{display:block;font-weight:400;color:#aab3cc;font-size:12.5px;font-style:normal;}
+.testimonial-note{font-size:11px;color:#8a93ad;margin-top:10px;}
+/* why us */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.why-grid h2{font-size:clamp(26px,3.4vw,36px);color:var(--navy-dark);margin-bottom:16px;}
+.why-grid p.desc{color:var(--text-muted);font-size:16px;margin-bottom:24px;}
+.checklist li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:15.5px;}
+.checklist svg{flex-shrink:0;width:20px;height:20px;stroke:var(--red);margin-top:2px;}
+.credentials-box{background:var(--gray-bg);border:1px solid var(--gray-border);border-radius:14px;padding:30px;}
+.credentials-box h4{font-size:15px;text-transform:uppercase;letter-spacing:.5px;color:var(--navy-dark);margin-bottom:18px;}
+.credential-item{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--gray-border);font-size:14.5px;}
+.credential-item:last-child{border-bottom:none;}
+.credential-item b{color:var(--navy-dark);}
+.credential-item span{color:var(--text-muted);font-size:13px;}
+.veteran-badge{display:inline-flex;align-items:center;gap:8px;background:var(--navy-dark);color:#fff;padding:9px 16px;border-radius:8px;font-weight:700;font-size:13px;margin-top:18px;}
+/* emergency banner */
+.emergency-banner{background:linear-gradient(120deg,var(--red-dark),var(--red));color:#fff;padding:44px 0;}
+.emergency-wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+.emergency-wrap h2{font-size:clamp(22px,3vw,30px);margin-bottom:6px;}
+.emergency-wrap p{color:#ffe1e2;font-size:15px;}
+/* areas */
+.areas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:10px;}
+.area-group h4{font-family:'Oswald',sans-serif;color:var(--navy-dark);font-size:16px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--gold);}
+.area-group ul li{font-size:14.5px;color:var(--text-muted);padding:4px 0;}
+.areas-note{text-align:center;margin-top:40px;padding:22px;background:#fff;border:1px dashed var(--gray-border);border-radius:12px;font-size:15px;color:var(--text-muted);}
+/* faq */
+.faq-list{max-width:800px;margin:0 auto;}
+.faq-item{background:#fff;border:1px solid var(--gray-border);border-radius:10px;margin-bottom:12px;overflow:hidden;}
+.faq-item summary{padding:18px 22px;font-weight:600;font-size:15.5px;color:var(--navy-dark);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:"+";font-size:22px;color:var(--red);font-weight:400;}
+.faq-item[open] summary::after{content:"\2212";}
+.faq-item .faq-answer{padding:0 22px 20px;color:var(--text-muted);font-size:14.5px;}
+/* final cta */
+.final-cta{background:var(--navy-dark);color:#fff;text-align:center;padding:72px 0;}
+.final-cta h2{font-size:clamp(26px,3.6vw,38px);margin-bottom:14px;}
+.final-cta p{color:#c6cee2;font-size:16px;margin-bottom:30px;max-width:560px;margin-left:auto;margin-right:auto;}
+.final-cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+/* legal accordion */
+.legal-section{background:var(--gray-bg);padding:40px 0;}
+.legal-section details{max-width:900px;margin:0 auto 12px;background:#fff;border:1px solid var(--gray-border);border-radius:10px;padding:0;}
+.legal-section summary{padding:16px 20px;font-weight:700;font-size:14.5px;color:var(--navy-dark);cursor:pointer;}
+.legal-section .legal-body{padding:0 20px 20px;font-size:13.5px;color:var(--text-muted);line-height:1.7;}
+.legal-body h5{color:var(--navy-dark);margin:14px 0 6px;font-size:13.5px;}
+/* footer */
+footer{background:var(--navy-dark);color:#c6cee2;padding:60px 0 24px;font-size:14px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+.footer-brand img{height:44px;margin-bottom:14px;filter:brightness(0) invert(1);}
+.footer-brand p{color:#9aa4c0;font-size:13.5px;line-height:1.7;}
+footer h5{color:#fff;font-family:'Oswald',sans-serif;font-size:15px;margin-bottom:16px;letter-spacing:.3px;}
+footer ul li{margin-bottom:10px;}
+footer ul li a:hover{color:#fff;}
+footer ul li{color:#9aa4c0;}
+.social-row{display:flex;gap:10px;margin-top:16px;}
+.social-row a{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;}
+.social-row svg{width:16px;height:16px;stroke:#fff;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#8a93ad;}
+.footer-bottom a{color:#8a93ad;}
+.footer-bottom a:hover{color:#fff;}
+/* mobile sticky bar */
+.mobile-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;box-shadow:0 -6px 20px rgba(0,0,0,.15);padding:10px 16px;gap:10px;}
+.mobile-bar a{flex:1;text-align:center;padding:13px 0;border-radius:8px;font-weight:700;font-size:14px;}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .services-grid{grid-template-columns:repeat(2,1fr);}
+  .why-grid{grid-template-columns:1fr;}
+  .areas-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .mobile-bar{display:flex;}
+  body{padding-bottom:64px;}
+}
+@media(max-width:600px){
+  .services-grid{grid-template-columns:1fr;}
+  .areas-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .testimonial{flex-direction:column;}
+  .emergency-wrap{text-align:center;justify-content:center;}
+}
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <div class="tags">
+      <span>&#9989; Licensed &amp; Insured</span>
+      <span>&#128737; Manufacturer Certified</span>
+      <span>&#9200; 24/7 Storm Response</span>
+    </div>
+    <a href="tel:+13864731174">Call Now: 386-473-1174</a>
+  </div>
+</div>
+
+<header class="main-nav">
+  <div class="nav-wrap">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="American Roofing & Construction LLC logo">
+    </a>
+    <input type="checkbox" id="menu-toggle">
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#faq">FAQ</a>
+      <a href="#quote">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="nav-phone">
+        <small>Call for a free quote</small>
+        <a href="tel:+13864731174">386-473-1174</a>
+      </div>
+      <a href="#quote" class="btn btn-red">Get a Free Quote</a>
+      <label for="menu-toggle" class="menu-toggle-label">&#9776;</label>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-badge">&#9989; Licensed &amp; Insured Contractor &middot; Serving Florida</span>
+      <h1>Storm Damage or Roof Trouble?<br>Get It Fixed <span class="accent-gold">Right</span>, Backed by <span class="accent-red">American</span> Craftsmanship.</h1>
+      <p class="lead">Residential and commercial roofing, restoration, and construction from one licensed, insured contractor. Free quotes, honest work, done right the first time.</p>
+      <div class="hero-cta-row">
+        <a href="#quote" class="btn btn-red">Get My Free Quote</a>
+        <a href="tel:+13864731174" class="btn btn-outline">&#128222; Call 386-473-1174</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>60+</b><span>Years Combined Experience</span></div>
+        <div class="stat"><b>24/7</b><span>Emergency Storm Response</span></div>
+        <div class="stat"><b>100%</b><span>Licensed &amp; Insured</span></div>
+      </div>
+      <div class="hero-badges">
+        <span>&#9989; Free, No-Pressure Estimates</span>
+        <span>&#9989; Direct Owner Communication</span>
+        <span>&#9989; Warranty-Backed Work</span>
+      </div>
+    </div>
+
+    <div class="quote-card" id="quote">
+      <h3>Get Your Free Quote</h3>
+      <p class="sub">Tell us about your project. A licensed team member will call you back fast.</p>
+      <form action="#" method="POST">
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="John Smith" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(386) 000-0000" required>
+        </div>
+        <div class="form-row">
+          <label for="zip">City / Zip Code</label>
+          <input type="text" id="zip" name="zip" placeholder="Orlando, FL" required>
+        </div>
+        <div class="form-row">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Residential Roofing</option>
+            <option>Commercial Roofing</option>
+            <option>Storm Damage / Emergency</option>
+            <option>Fire, Water or Mold Restoration</option>
+            <option>Construction / Additions</option>
+            <option>Free Inspection Only</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-red btn-block">Get My Free Quote</button>
+        <p class="consent-text">By submitting this form, you agree to be contacted by American Roofing &amp; Construction LLC by phone, text, or email about your request, which may involve automated technology. Message and data rates may apply. Consent is not a condition of purchase. See our <a href="#privacy-policy">Privacy Policy</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What We Do</span>
+      <h2>Complete Roofing, Restoration &amp; Construction Solutions</h2>
+      <p>One licensed contractor for every job, from a single repair to a full commercial build-out.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 9.5V20a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1V9.5"/></svg></div>
+        <h3>Residential Roofing</h3>
+        <p>New roof installation, repairs, and inspections. All major shingle brands and warranty-backed materials.</p>
+        <a href="#quote" class="link">Get a Free Quote &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg></div>
+        <h3>Commercial Roofing</h3>
+        <p>TPO, EPDM, metal and modified bitumen roofing for property managers and business owners, with minimal disruption.</p>
+        <a href="#quote" class="link">Get a Free Quote &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg></div>
+        <h3>Storm Damage Response</h3>
+        <p>Wind, hail or hurricane damage? We're on site fast with tarping, temporary repair, and full restoration.</p>
+        <a href="#quote" class="link">Request Emergency Help &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 4 6 7.5 6 11a6 6 0 01-12 0c0-3.5 3-7 6-11z"/></svg></div>
+        <h3>Fire, Water &amp; Mold Restoration</h3>
+        <p>Full restoration for storm, fire and water-damaged properties. We coordinate every trade to rebuild it right.</p>
+        <a href="#quote" class="link">Get a Free Quote &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.1-3.1a4 4 0 01-5.4 5.4L4.7 22 2 19.3l10.4-10.4a4 4 0 015.4-5.4l-3 3z"/></svg></div>
+        <h3>General Construction</h3>
+        <p>Remodeling, kitchens, baths, siding, room additions, and full renovations by licensed builders you can trust.</p>
+        <a href="#quote" class="link">Get a Free Quote &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+        <h3>Damage Inspections &amp; Estimates</h3>
+        <p>Free post-storm inspections, detailed photo documentation, and honest, itemized repair estimates.</p>
+        <a href="#quote" class="link">Book Free Inspection &rarr;</a>
+      </div>
+    </div>
+
+    <div class="testimonial" id="reviews">
+      <div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"After the last storm we had two soft spots on the roof and no idea where to start. Their crew showed up, explained everything in plain language, and the whole job was done in a day. No pressure, no surprises on the invoice."</p>
+        <div class="cite">Verified Customer <span>Orlando, FL</span></div>
+        <p class="testimonial-note">Sample placeholder review. Replace with a verified Google or Facebook review before this page goes live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="why-us">
+  <div class="container why-grid">
+    <div>
+      <span class="eyebrow">Who We Are</span>
+      <h2>Local Contractors With Old-School Work Ethic</h2>
+      <p class="desc">American Roofing &amp; Construction LLC was built on a simple promise: do quality work, treat people right, and stand behind every job. As a licensed and insured contractor, we handle everything from small repairs to major commercial builds, with the same attention to detail and respect for your property.</p>
+      <ul class="checklist">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Free, no-pressure inspections and estimates</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Direct communication with owners and project managers</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Detailed documentation and itemized repair estimates</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Warranty-backed materials and workmanship</li>
+      </ul>
+      <a href="#quote" class="btn btn-navy" style="margin-top:8px;">Get Your Free Inspection</a>
+    </div>
+
+    <div class="credentials-box">
+      <h4>Credentials You Can Verify</h4>
+      <div class="credential-item"><div><b>Licensed General Contractor</b><br><span>Build and remodel commercial and residential structures up to three stories</span></div></div>
+      <div class="credential-item"><span>CBC1269628</span></div>
+      <div class="credential-item"><div><b>Licensed Roofing Contractor</b><br><span>Residential and commercial roofing: repair, replacement, re-roofs</span></div></div>
+      <div class="credential-item"><span>CCC1331891</span></div>
+      <div class="credential-item"><div><b>Licensed Mold Assessor</b></div><span>MRSA5363</span></div>
+      <div class="credential-item"><div><b>Licensed Mold Remediator</b></div><span>MRSR5423</span></div>
+      <div class="veteran-badge">&#11088; Veteran Owned Business</div>
+    </div>
+  </div>
+</section>
+
+<section class="emergency-banner">
+  <div class="container emergency-wrap">
+    <div>
+      <h2>Storm Damage? We Respond 24/7.</h2>
+      <p>Tarping, temporary repair, and full restoration, day or night.</p>
+    </div>
+    <a href="tel:+13864731174" class="btn" style="background:#fff;color:var(--red-dark);">&#128222; Call Now: 386-473-1174</a>
+  </div>
+</section>
+
+<section class="section" id="areas">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Where We Work</span>
+      <h2>Proudly Serving Florida</h2>
+      <p>From licensed roofing and construction to full restoration, we bring the same accountable team to homeowners and businesses across the region.</p>
+    </div>
+
+    <div class="areas-grid">
+      <div class="area-group">
+        <h4>Orlando Metro</h4>
+        <ul>
+          <li>Orlando</li><li>Winter Park</li><li>Winter Garden</li><li>Winter Springs</li><li>Maitland</li><li>Longwood</li><li>Lake Mary</li><li>Sanford</li><li>Oviedo</li><li>Apopka</li><li>Casselberry</li><li>Altamonte Springs</li><li>Heathrow</li><li>Dr. Phillips</li><li>Kissimmee</li><li>Celebration</li><li>St. Cloud</li>
+        </ul>
+      </div>
+      <div class="area-group">
+        <h4>Tampa Bay &amp; Central FL</h4>
+        <ul>
+          <li>Tampa</li><li>Brandon</li><li>Riverview</li><li>Plant City</li><li>Wesley Chapel</li><li>Zephyrhills</li><li>Lakeland</li><li>Winter Haven</li><li>Clermont</li><li>Davenport</li><li>The Villages</li><li>Leesburg</li><li>Mt. Dora</li><li>Eustis</li><li>Lady Lake</li><li>Wildwood</li>
+        </ul>
+      </div>
+      <div class="area-group">
+        <h4>Space Coast &amp; East FL</h4>
+        <ul>
+          <li>Melbourne</li><li>Palm Bay</li><li>Titusville</li><li>Rockledge</li><li>Merritt Island</li><li>Viera</li><li>Satellite Beach</li><li>Indian Harbour Beach</li><li>Cocoa</li><li>Daytona Beach</li><li>Ormond Beach</li><li>Port Orange</li><li>New Smyrna Beach</li><li>DeLand</li><li>Deltona</li>
+        </ul>
+      </div>
+      <div class="area-group">
+        <h4>First Coast &amp; North FL</h4>
+        <ul>
+          <li>Jacksonville</li><li>Jacksonville Beach</li><li>St. Augustine</li><li>Ponte Vedra Beach</li><li>Orange Park</li><li>Green Cove Springs</li><li>Fernandina Beach</li><li>Palm Coast</li><li>Gainesville</li><li>Ocala</li>
+        </ul>
+      </div>
+      <div class="area-group">
+        <h4>Southwest &amp; South FL</h4>
+        <ul>
+          <li>Fort Myers</li><li>Naples</li><li>Sarasota</li><li>Belleview</li><li>Port St. Lucie</li><li>West Palm Beach</li>
+        </ul>
+      </div>
+      <div class="area-group">
+        <h4>Not Sure If We Cover You?</h4>
+        <p style="font-size:14.5px;color:var(--text-muted);line-height:1.7;">Give us a call. Chances are we are already working near you. We are adding new coverage areas regularly across Florida.</p>
+        <a href="tel:+13864731174" class="btn btn-red" style="margin-top:12px;">&#128222; Check Your Address</a>
+      </div>
+    </div>
+
+    <div class="testimonial" style="margin-top:50px;">
+      <div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"We manage a small retail plaza and needed a commercial roof repair without shutting our tenants down for days. American Roofing worked around our schedule and kept us updated the whole time."</p>
+        <div class="cite">Verified Customer <span>Tampa, FL</span></div>
+        <p class="testimonial-note">Sample placeholder review. Replace with a verified Google or Facebook review before this page goes live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Do you offer free estimates?</summary>
+        <p class="faq-answer">Yes. Every inspection and estimate is free, with no pressure to sign anything on the spot. We document the damage or scope with photos and give you an itemized estimate.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How fast can you respond to storm damage?</summary>
+        <p class="faq-answer">Our storm response team is available 24/7. For active leaks or wind and hail damage, we prioritize tarping and temporary repairs to stop further damage before we schedule the full fix.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are you licensed and insured?</summary>
+        <p class="faq-answer">Yes. We hold our own Florida licenses in general contracting (CBC1269628), roofing (CCC1331891), and mold assessment and remediation (MRSA5363, MRSR5423), and we carry general liability and workers' compensation on every job.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you work with insurance claims?</summary>
+        <p class="faq-answer">We provide detailed photo documentation and itemized estimates that you can submit to your insurance carrier. Ask your project manager for guidance on the claims process for your specific job.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What areas do you serve?</summary>
+        <p class="faq-answer">We serve homeowners and businesses across Central, North, and parts of Southwest Florida. See the full list of cities above, or call us to confirm coverage for your address.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if I only need a small repair, not a full roof?</summary>
+        <p class="faq-answer">No job is too small. We handle single-shingle repairs and minor leaks the same way we handle full re-roofs: licensed work, honest pricing, and a warranty behind it.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <h2>Ready to Get Your Free Quote?</h2>
+    <p>Licensed, insured, and ready to respond, whether it's a storm emergency or a project you have been planning for months.</p>
+    <div class="final-cta-row">
+      <a href="#quote" class="btn btn-red">Get My Free Quote</a>
+      <a href="tel:+13864731174" class="btn btn-outline">&#128222; Call 386-473-1174</a>
+    </div>
+  </div>
+</section>
+
+<section class="legal-section">
+  <div class="container">
+    <details id="privacy-policy">
+      <summary>Privacy Policy</summary>
+      <div class="legal-body">
+        <p>American Roofing &amp; Construction LLC ("we," "us," "our") respects your privacy. This policy explains what information we collect on this page and how we use it.</p>
+        <h5>Information We Collect</h5>
+        <p>When you submit the quote form on this page, we collect your name, phone number, city or zip code, email address (if provided), and the service you are requesting.</p>
+        <h5>How We Use Your Information</h5>
+        <p>We use this information only to contact you about your quote request, schedule inspections, and provide services you request. We do not sell your personal information to third parties.</p>
+        <h5>Communication Consent</h5>
+        <p>By submitting this form, you consent to receive calls, texts, and emails from American Roofing &amp; Construction LLC related to your request, which may use automated dialing or messaging technology. Message and data rates may apply. Consent is not a condition of any purchase. Reply STOP to opt out of texts at any time.</p>
+        <h5>Cookies and Analytics</h5>
+        <p>This page may use cookies or similar technologies from advertising and analytics providers, such as Google and Meta, to measure ad performance. You can control cookies through your browser settings.</p>
+        <h5>Your Choices</h5>
+        <p>To request access to, correction of, or deletion of your information, contact us at info@americanrcusa.com or 386-473-1174.</p>
+        <p><em>This is placeholder policy language for launch. Have this reviewed by a licensed attorney before the page goes live, to confirm it matches your actual data practices and Florida and TCPA requirements.</em></p>
+      </div>
+    </details>
+    <details id="terms">
+      <summary>Terms of Use</summary>
+      <div class="legal-body">
+        <p>This website and the information on it are provided for general informational purposes about the services of American Roofing &amp; Construction LLC. Quotes and estimates provided through this page are not final until confirmed after an in-person inspection.</p>
+        <p>All licensing information listed on this page (CBC1269628, CCC1331891, MRSA5363, MRSR5423) is provided for verification purposes. Verify current license status through the Florida Department of Business and Professional Regulation.</p>
+        <p><em>This is placeholder terms language for launch. Have this reviewed by a licensed attorney before the page goes live.</em></p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="American Roofing & Construction LLC">
+        <p>Built to Trust. Built to Last. Built American. Trusted residential and commercial roofing and construction. Licensed, insured, and proud to serve our community.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Google"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">About Us</a></li>
+          <li><a href="#areas">Service Areas</a></li>
+          <li><a href="#quote">Get a Free Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+13864731174">386-473-1174</a></li>
+          <li><a href="mailto:info@americanrcusa.com">info@americanrcusa.com</a></li>
+          <li>Proudly serving Florida</li>
+          <li>24/7 Emergency Storm Response</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Licensed &amp; Insured</h5>
+        <ul>
+          <li>General Contractor: CBC1269628</li>
+          <li>Roofing Contractor: CCC1331891</li>
+          <li>Mold Assessor: MRSA5363</li>
+          <li>Mold Remediator: MRSR5423</li>
+          <li>Veteran Owned</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 American Roofing &amp; Construction LLC. All rights reserved.</span>
+      <span><a href="#privacy-policy">Privacy Policy</a> &middot; <a href="#terms">Terms of Use</a> &middot; americanrcusa.com</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+13864731174" class="btn-navy">&#128222; Call Now</a>
+  <a href="#quote" class="btn-red">Get Free Quote</a>
+</div>
+
+</body>
+</html>
