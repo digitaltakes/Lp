@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mental Health Care in Horsham, PA | Hope's Destiny</title>
+<meta name="description" content="Outpatient mental health and co-occurring care for teens and adults in Horsham, PA. Joint Commission accredited. Private and commercial insurance. Call 215-935-4191.">
+<link rel="icon" href="https://hopesdestiny.com/wp-content/uploads/2025/04/cropped-NEW-FAV-32x32-1.png">
+
+<!--
+  ==========================================================================
+  HOPE'S DESTINY  |  META ADS LANDING PAGE
+  Built for paid social traffic only (Facebook + Instagram). Not for organic
+  search, not linked from the main site navigation. noindex is set above on
+  purpose so this page never competes with hopesdestiny.com in search.
+
+  BEFORE GO LIVE, three things must be set by the developer:
+    1. HD.formEndpoint below. The form currently posts nowhere.
+    2. Confirm 215-935-4191 is the number that should be tracked for ads.
+    3. Confirm the payer list in the Insurance section with the client.
+
+  Brand assets, colours and copy are taken from hopesdestiny.com.
+  Fonts: Raleway (site face, display) + Source Sans 3 (body and forms).
+  ==========================================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+
+<style>
+/* ---------------------------------------------------------------
+   TOKENS
+   Palette lifted from hopesdestiny.com. This page commits to a
+   single light theme on purpose: it is a brand landing page that
+   must match the live site on every device, so it does not follow
+   the viewer's dark mode. Every colour is painted explicitly.
+   --------------------------------------------------------------- */
+:root {
+  color-scheme: light;
+
+  --blue:        #0091d5;   /* site primary */
+  --blue-deep:   #00719f;   /* hover / pressed */
+  --blue-ink:    #005d85;   /* text on pale blue */
+  --ink:         #2d4249;   /* site heading slate */
+  --ink-deep:    #112337;   /* site dark band */
+  --body:        #51565d;   /* site body copy */
+  --gold:        #dfa33c;   /* accent bar, matches the ad creative */
+  --gold-soft:   #fbf1de;
+
+  --paper:       #ffffff;
+  --wash:        #f4fafd;   /* cool neutral, biased to the accent */
+  --tint:        #e1eff8;   /* site pale blue */
+  --tint-soft:   #eff9ff;
+  --line:        #d6e5ef;
+  --line-soft:   #e8f0f5;
+
+  --ok:          #17795c;
+  --warn-bg:     #fff8e6;
+  --warn-line:   #e8c266;
+  --warn-ink:    #7a5410;
+
+  --display: "Raleway", "Trebuchet MS", "Segoe UI", sans-serif;
+  --text: "Source Sans 3", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --wrap: 1160px;
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --shadow-card: 0 1px 2px rgba(17,35,55,.05), 0 8px 24px rgba(17,35,55,.06);
+  --shadow-lift: 0 2px 4px rgba(17,35,55,.06), 0 18px 44px rgba(17,35,55,.14);
+  --header-h: 78px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 12px); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--body);
+  font-family: var(--text);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--blue-deep); }
+
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.16;
+  text-wrap: balance;
+  letter-spacing: -.012em;
+}
+h1 { font-size: clamp(2rem, 1.35rem + 2.6vw, 3.15rem); font-weight: 800; }
+h2 { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem); font-weight: 800; }
+h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -.006em; }
+h4 { font-size: 1.02rem; font-weight: 700; }
+p { margin: 0; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 22px; }
+.prose { max-width: 66ch; }
+
+/* Section rhythm. One rule owns vertical space between bands so
+   nothing further down fights it. */
+.band { padding: clamp(56px, 6vw, 92px) 0; }
+.band--wash { background: var(--wash); }
+.band--tint { background: var(--tint-soft); }
+.band--dark { background: var(--ink-deep); }
+.band--tight { padding: clamp(38px, 4vw, 54px) 0; }
+
+.eyebrow {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: .74rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--blue-deep);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+.eyebrow::before {
+  content: "";
+  width: 26px; height: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+  flex: none;
+}
+.band--dark .eyebrow { color: #7fd0f7; }
+
+.lede { font-size: 1.09rem; color: var(--body); }
+.band--dark, .band--dark p, .band--dark li { color: #ccdbe6; }
+.band--dark h2, .band--dark h3, .band--dark h4 { color: #ffffff; }
+
+.head { margin-bottom: clamp(30px, 3.4vw, 46px); }
+.head h2 { margin-bottom: 12px; }
+
+/* ---------------------------------------------------------------
+   BUTTONS
+   --------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: .95rem;
+  letter-spacing: .01em;
+  padding: 15px 26px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+.btn--primary { background: var(--blue); color: #fff; }
+.btn--primary:hover { background: var(--blue-deep); color: #fff; }
+
+.btn--ghost { background: transparent; color: var(--blue-deep); border-color: var(--blue); }
+.btn--ghost:hover { background: var(--blue); color: #fff; }
+
+.btn--onDark { background: #fff; color: var(--blue-deep); }
+.btn--onDark:hover { background: var(--tint); color: var(--blue-deep); }
+
+.btn--outlineDark { background: transparent; color: #fff; border-color: rgba(255,255,255,.5); }
+.btn--outlineDark:hover { background: rgba(255,255,255,.12); border-color: #fff; color: #fff; }
+
+.btn--wide { width: 100%; padding: 17px 26px; font-size: 1.03rem; }
+.btn svg { flex: none; }
+
+.cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+/* ---------------------------------------------------------------
+   HEADER
+   --------------------------------------------------------------- */
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  background: #fff; color: var(--blue-deep); padding: 12px 18px;
+  font-family: var(--display); font-weight: 700; border-radius: 0 0 var(--r-sm) 0;
+}
+.skip:focus { left: 0; }
+
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid var(--line-soft);
+  transition: box-shadow .2s ease, border-color .2s ease;
+}
+.header.is-stuck { box-shadow: 0 4px 20px rgba(17,35,55,.09); border-color: transparent; }
+
+.header__in {
+  height: var(--header-h);
+  display: flex; align-items: center; gap: 20px;
+  transition: height .2s ease;
+}
+.header.is-stuck .header__in { height: 66px; }
+
+.brand { display: flex; align-items: center; gap: 14px; margin-right: auto; min-width: 0; }
+.brand img { width: 118px; height: auto; }
+.brand__seal {
+  display: flex; align-items: center; gap: 8px;
+  padding-left: 14px; border-left: 1px solid var(--line);
+  font-family: var(--display); font-weight: 700; font-size: .68rem;
+  line-height: 1.25; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--ink);
+}
+.brand__seal img { width: 30px; }
+
+.header__cta { display: flex; align-items: center; gap: 16px; }
+.header__tel {
+  display: flex; align-items: center; gap: 9px;
+  text-decoration: none; color: var(--ink);
+  font-family: var(--display); font-weight: 800; font-size: 1.12rem;
+  letter-spacing: -.01em; white-space: nowrap;
+}
+.header__tel span { display: block; font-size: .64rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--blue-deep); }
+.header__tel:hover { color: var(--blue-deep); }
+.header .btn { padding: 12px 22px; }
+
+@media (max-width: 1000px) { .brand__seal { display: none; } }
+@media (max-width: 720px) {
+  :root { --header-h: 66px; }
+  .header__tel span { display: none; }
+  .header__tel { font-size: 1rem; }
+  .header .btn { display: none; }
+  .brand img { width: 100px; }
+}
+
+/* ---------------------------------------------------------------
+   HERO
+   --------------------------------------------------------------- */
+.hero {
+  background:
+    radial-gradient(900px 460px at 88% -10%, var(--tint) 0%, rgba(225,239,248,0) 62%),
+    linear-gradient(180deg, #ffffff 0%, var(--wash) 100%);
+  border-bottom: 1px solid var(--line-soft);
+  padding: clamp(38px, 4.4vw, 66px) 0 clamp(46px, 5vw, 74px);
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 440px);
+  gap: clamp(30px, 4vw, 62px);
+  align-items: start;
+}
+.hero h1 { margin-bottom: 16px; }
+.hero h1 em {
+  font-style: normal;
+  color: var(--blue-deep);
+  box-shadow: inset 0 -.32em 0 var(--tint);
+}
+.hero__sub { font-size: clamp(1.02rem, .96rem + .3vw, 1.16rem); max-width: 56ch; margin-bottom: 24px; }
+
+.ticks { list-style: none; margin: 0 0 26px; padding: 0; display: grid; gap: 11px; }
+.ticks li { display: grid; grid-template-columns: 22px 1fr; gap: 11px; align-items: start; font-size: 1rem; }
+.ticks li strong { color: var(--ink); font-weight: 600; }
+.tick {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--tint); color: var(--blue-deep);
+  display: grid; place-items: center; margin-top: 2px;
+}
+
+.hero__photo {
+  margin-top: 30px;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+.hero__photo img { width: 100%; }
+.hero__photo figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 30px 22px 16px;
+  background: linear-gradient(180deg, rgba(17,35,55,0) 0%, rgba(17,35,55,.82) 100%);
+  color: #fff; font-family: var(--display); font-weight: 600; font-size: .9rem;
+}
+
+@media (max-width: 940px) {
+  .hero__grid { grid-template-columns: minmax(0, 1fr); }
+  .hero__photo { display: none; }
+}
+
+/* ---------------------------------------------------------------
+   LEAD FORM
+   --------------------------------------------------------------- */
+.formcard {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lift);
+  overflow: hidden;
+  position: sticky;
+  top: calc(var(--header-h) + 18px);
+}
+@media (max-width: 940px) { .formcard { position: static; } }
+
+.formcard__top {
+  background: var(--ink-deep);
+  color: #fff;
+  padding: 20px 24px 18px;
+  border-bottom: 4px solid var(--gold);
+}
+.formcard__top h2 { color: #fff; font-size: 1.34rem; margin-bottom: 6px; }
+.formcard__top p { color: #bed0dd; font-size: .93rem; }
+
+.formcard form { padding: 22px 24px 24px; display: grid; gap: 15px; }
+
+.field { display: grid; gap: 6px; }
+.field label {
+  font-family: var(--display); font-weight: 700; font-size: .78rem;
+  letter-spacing: .07em; text-transform: uppercase; color: var(--ink);
+}
+.field .req { color: var(--blue-deep); }
+.field input, .field select, .field textarea {
+  font-family: var(--text); font-size: 1rem; color: var(--ink);
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--r-sm);
+  padding: 12px 13px;
+  width: 100%;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.field select { appearance: none; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%2351565d' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 13px center; padding-right: 38px; }
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,145,213,.16);
+}
+.field--pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 420px) { .field--pair { grid-template-columns: 1fr; } }
+
+.consent { display: grid; grid-template-columns: 20px 1fr; gap: 11px; align-items: start; }
+.consent input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--blue); }
+.consent span { font-size: .82rem; line-height: 1.5; color: var(--body); }
+.consent a { color: var(--blue-deep); }
+
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+.formcard__foot {
+  border-top: 1px solid var(--line-soft);
+  background: var(--wash);
+  padding: 14px 24px;
+  display: flex; flex-wrap: wrap; gap: 8px 18px;
+  font-size: .8rem; color: var(--body);
+}
+.formcard__foot span { display: inline-flex; align-items: center; gap: 6px; }
+
+.formcard__alt { text-align: center; font-size: .9rem; margin-top: -2px; }
+.formcard__alt a { font-family: var(--display); font-weight: 800; color: var(--ink); text-decoration: none; font-size: 1.06rem; }
+.formcard__alt a:hover { color: var(--blue-deep); }
+
+.formnote {
+  border: 1.5px solid var(--warn-line);
+  background: var(--warn-bg);
+  color: var(--warn-ink);
+  border-radius: var(--r-sm);
+  padding: 11px 13px;
+  font-size: .82rem;
+  line-height: 1.5;
+}
+.formerr { color: #a3231b; font-size: .84rem; font-weight: 600; }
+[hidden] { display: none !important; }
+
+.thanks { padding: 34px 26px 32px; text-align: center; }
+.thanks__mark {
+  width: 62px; height: 62px; margin: 0 auto 18px;
+  border-radius: 50%; background: var(--tint); color: var(--blue-deep);
+  display: grid; place-items: center;
+}
+.thanks h3 { margin-bottom: 10px; font-size: 1.35rem; }
+.thanks p { font-size: .97rem; margin-bottom: 18px; }
+
+/* ---------------------------------------------------------------
+   INSURANCE QUALIFIER
+   --------------------------------------------------------------- */
+.qualifier {
+  background: var(--ink-deep);
+  color: #dce8f0;
+  padding: 22px 0;
+}
+.qualifier__in {
+  display: grid; grid-template-columns: 44px 1fr auto; gap: 20px; align-items: center;
+}
+.qualifier__mark {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(0,145,213,.22); color: #7fd0f7;
+  display: grid; place-items: center;
+}
+.qualifier strong { color: #fff; font-family: var(--display); font-weight: 700; }
+.qualifier p { font-size: .97rem; }
+.qualifier__note { font-size: .84rem; color: #9fb6c6; margin-top: 3px; }
+@media (max-width: 820px) {
+  .qualifier__in { grid-template-columns: 1fr; gap: 14px; }
+  .qualifier__mark { display: none; }
+}
+
+/* ---------------------------------------------------------------
+   TRUST STRIP
+   --------------------------------------------------------------- */
+.trust { border-bottom: 1px solid var(--line-soft); background: var(--paper); padding: 26px 0; }
+.trust__in {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px 30px;
+}
+.trust__item { display: grid; grid-template-columns: 40px 1fr; gap: 13px; align-items: center; }
+.trust__item img { width: 40px; height: auto; }
+.trust__ico { width: 40px; height: 40px; border-radius: 50%; background: var(--tint); color: var(--blue-deep); display: grid; place-items: center; }
+.trust__item b { display: block; font-family: var(--display); font-weight: 700; color: var(--ink); font-size: .93rem; line-height: 1.3; }
+.trust__item small { display: block; font-size: .8rem; color: var(--body); line-height: 1.4; }
+@media (max-width: 860px) { .trust__in { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .trust__in { grid-template-columns: 1fr; } }
+
+/* ---------------------------------------------------------------
+   GENERIC GRIDS AND CARDS
+   --------------------------------------------------------------- */
+.grid { display: grid; gap: 22px; }
+.grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 900px) { .grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .grid--3, .grid--2 { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.card__img { aspect-ratio: 4 / 3; overflow: hidden; background: var(--tint); }
+.card__img img { width: 100%; height: 100%; object-fit: cover; }
+.card__body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.card__tag {
+  align-self: flex-start;
+  font-family: var(--display); font-weight: 700; font-size: .68rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--blue-deep); background: var(--tint-soft);
+  border: 1px solid var(--tint); border-radius: 999px; padding: 4px 11px;
+}
+.card__body p { font-size: .96rem; }
+.card__list { list-style: none; margin: 2px 0 0; padding: 0; display: grid; gap: 7px; font-size: .93rem; }
+.card__list li { display: grid; grid-template-columns: 16px 1fr; gap: 9px; align-items: start; }
+.card__list li::before {
+  content: ""; width: 7px; height: 7px; margin: 8px 0 0 4px;
+  border-radius: 50%; background: var(--gold);
+}
+.card__cta { margin-top: auto; padding-top: 6px; }
+.card__cta a {
+  font-family: var(--display); font-weight: 700; font-size: .88rem;
+  text-decoration: none; color: var(--blue-deep);
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.card__cta a:hover { color: var(--ink); gap: 11px; }
+.card__cta a::after { content: "\2192"; transition: transform .18s ease; }
+
+/* Conditions we support: plain chips, not cards. */
+.chips { display: flex; flex-wrap: wrap; gap: 11px; }
+.chip {
+  background: var(--paper); border: 1px solid var(--line);
+  border-radius: 999px; padding: 9px 17px;
+  font-family: var(--display); font-weight: 600; font-size: .93rem; color: var(--ink);
+}
+.chip--lead { background: var(--ink); border-color: var(--ink); color: #fff; }
+.chip--lead::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); margin-right: 9px; vertical-align: middle; }
+
+/* ---------------------------------------------------------------
+   LEVELS OF CARE LADDER
+   Structured as a descending ladder because PHP, IOP and OP are a
+   real step-down sequence with real weekly hours, not three
+   equivalent options.
+   --------------------------------------------------------------- */
+.ladder { display: grid; gap: 14px; }
+.rung {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr) 210px;
+  gap: 26px;
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--blue);
+  border-radius: var(--r-md);
+  padding: 22px 26px;
+}
+.rung--2 { border-left-color: #4bb2e2; }
+.rung--3 { border-left-color: #96d3ee; }
+.rung__code {
+  font-family: var(--display); font-weight: 800;
+  font-size: 1.9rem; color: var(--ink); line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.rung__code small { display: block; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--blue-deep); margin-top: 7px; }
+.rung h3 { margin-bottom: 6px; }
+.rung p { font-size: .95rem; }
+.rung__dose { text-align: right; }
+.rung__hours {
+  font-family: var(--display); font-weight: 800; font-size: 1.06rem; color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.rung__bar { height: 8px; border-radius: 4px; background: var(--line-soft); margin-top: 9px; overflow: hidden; }
+.rung__bar i { display: block; height: 100%; background: var(--blue); border-radius: 4px; }
+.rung--2 .rung__bar i { background: #4bb2e2; }
+.rung--3 .rung__bar i { background: #96d3ee; }
+.rung__dose small { display: block; font-size: .76rem; color: var(--body); margin-top: 7px; }
+@media (max-width: 860px) {
+  .rung { grid-template-columns: 1fr; gap: 14px; padding: 20px 22px; }
+  .rung__dose { text-align: left; }
+  .rung__code { font-size: 1.5rem; }
+}
+
+.stepnote {
+  display: flex; align-items: center; gap: 12px;
+  margin-top: 18px; padding: 14px 18px;
+  background: var(--tint-soft); border: 1px solid var(--tint);
+  border-radius: var(--r-md); font-size: .93rem;
+}
+.stepnote svg { flex: none; color: var(--blue-deep); }
+
+/* ---------------------------------------------------------------
+   THERAPIES
+   --------------------------------------------------------------- */
+.therapies { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
+.therapy { background: var(--paper); padding: 24px 24px 26px; display: grid; gap: 9px; align-content: start; }
+.therapy__ico { width: 38px; height: 38px; border-radius: 10px; background: var(--gold-soft); color: #a8761c; display: grid; place-items: center; margin-bottom: 3px; }
+.therapy h3 { font-size: 1.06rem; }
+.therapy p { font-size: .93rem; }
+@media (max-width: 860px) { .therapies { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .therapies { grid-template-columns: 1fr; } }
+
+/* ---------------------------------------------------------------
+   TEAM (dark authority band)
+   --------------------------------------------------------------- */
+.team { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+@media (max-width: 900px) { .team { grid-template-columns: 1fr; } }
+.person {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 118px 1fr;
+}
+.person__photo { background: #1b3348; }
+.person__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.person__body { padding: 18px 20px; display: grid; gap: 6px; align-content: center; }
+.person__role { font-family: var(--display); font-weight: 700; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: #7fd0f7; }
+.person h3 { font-size: 1.08rem; }
+.person p { font-size: .88rem; line-height: 1.5; color: #b9cbd9; }
+@media (max-width: 420px) { .person { grid-template-columns: 92px 1fr; } }
+
+.figures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; margin-top: 34px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,.14); }
+.figure b { display: block; font-family: var(--display); font-weight: 800; font-size: 2.1rem; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
+.figure span { display: block; font-size: .9rem; color: #b9cbd9; margin-top: 8px; }
+@media (max-width: 700px) { .figures { grid-template-columns: 1fr; gap: 18px; } }
+
+/* ---------------------------------------------------------------
+   ACCREDITATIONS
+   --------------------------------------------------------------- */
+.creds { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
+@media (max-width: 900px) { .creds { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .creds { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cred {
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-md);
+  padding: 24px 18px 20px; text-align: center;
+  display: grid; gap: 12px; justify-items: center; align-content: start;
+  text-decoration: none;
+}
+.cred__frame { height: 66px; display: grid; place-items: center; }
+.cred__frame img { max-height: 66px; width: auto; }
+.cred b { font-family: var(--display); font-weight: 700; font-size: .88rem; color: var(--ink); line-height: 1.35; }
+.cred small { font-size: .78rem; color: var(--body); line-height: 1.45; }
+a.cred:hover { border-color: var(--blue); }
+a.cred:hover b { color: var(--blue-deep); }
+
+/* ---------------------------------------------------------------
+   TESTIMONIALS
+   --------------------------------------------------------------- */
+.quotes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+@media (max-width: 900px) { .quotes { grid-template-columns: 1fr; } }
+.quote {
+  background: var(--paper); border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+  border-radius: var(--r-md); padding: 26px 24px 24px;
+  display: grid; gap: 14px; align-content: start;
+}
+.quote__stars { color: var(--gold); letter-spacing: 3px; font-size: 1rem; }
+.quote blockquote { margin: 0; font-size: 1.01rem; line-height: 1.6; color: var(--ink); }
+.quote figcaption { font-family: var(--display); font-weight: 700; font-size: .88rem; color: var(--body); }
+.slot {
+  display: inline-block;
+  background: var(--warn-bg); border: 1px dashed var(--warn-line);
+  color: var(--warn-ink); border-radius: var(--r-sm);
+  padding: 2px 8px; font-family: var(--display); font-weight: 700;
+  font-size: .78rem; letter-spacing: .06em; text-transform: uppercase;
+}
+.buildnote {
+  margin-top: 22px;
+  border: 1.5px solid var(--warn-line); background: var(--warn-bg); color: var(--warn-ink);
+  border-radius: var(--r-md); padding: 16px 20px; font-size: .9rem; line-height: 1.55;
+}
+.buildnote b { font-family: var(--display); }
+
+/* ---------------------------------------------------------------
+   HOW IT WORKS
+   --------------------------------------------------------------- */
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
+@media (max-width: 860px) { .steps { grid-template-columns: 1fr; } }
+.step { position: relative; padding: 0 26px; }
+.step:first-child { padding-left: 0; }
+.step:last-child { padding-right: 0; }
+.step + .step { border-left: 1px solid var(--line); }
+@media (max-width: 860px) {
+  .step { padding: 0 0 24px; }
+  .step + .step { border-left: 0; border-top: 1px solid var(--line); padding-top: 24px; }
+  .step:last-child { padding-bottom: 0; }
+}
+.step__n {
+  font-family: var(--display); font-weight: 800; font-size: .84rem;
+  letter-spacing: .1em; color: var(--blue-deep);
+  display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
+}
+.step__n i { font-style: normal; width: 30px; height: 30px; border-radius: 50%; background: var(--blue); color: #fff; display: grid; place-items: center; font-size: .92rem; letter-spacing: 0; }
+.step h3 { margin-bottom: 9px; }
+.step p { font-size: .96rem; }
+
+/* ---------------------------------------------------------------
+   INSURANCE
+   --------------------------------------------------------------- */
+.payers { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 34px; }
+.payers img { max-height: 44px; width: auto; filter: saturate(.95); }
+.payers .pill {
+  font-family: var(--display); font-weight: 700; font-size: .93rem; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-sm);
+  padding: 10px 16px;
+}
+
+/* ---------------------------------------------------------------
+   FAQ
+   --------------------------------------------------------------- */
+.faq { border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  list-style: none; cursor: pointer;
+  display: grid; grid-template-columns: 1fr 26px; gap: 18px; align-items: center;
+  padding: 20px 2px;
+  font-family: var(--display); font-weight: 700; font-size: 1.06rem; color: var(--ink);
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary:hover { color: var(--blue-deep); }
+.faq summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.faq summary i {
+  font-style: normal; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--tint); color: var(--blue-deep);
+  display: grid; place-items: center; font-size: 1.05rem; line-height: 1;
+  transition: transform .2s ease, background-color .2s ease;
+}
+.faq details[open] summary i { transform: rotate(45deg); background: var(--blue); color: #fff; }
+.faq__a { padding: 0 44px 24px 2px; font-size: .99rem; }
+.faq__a p + p, .faq__a p + ul { margin-top: 12px; }
+.faq__a ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+
+/* ---------------------------------------------------------------
+   LOCATION
+   --------------------------------------------------------------- */
+.locate { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 380px); gap: clamp(26px, 4vw, 56px); align-items: start; }
+@media (max-width: 900px) { .locate { grid-template-columns: 1fr; } }
+.addr {
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-md);
+  padding: 26px 26px 24px; display: grid; gap: 20px;
+}
+.addr__row { display: grid; grid-template-columns: 34px 1fr; gap: 14px; align-items: start; }
+.addr__ico { width: 34px; height: 34px; border-radius: 9px; background: var(--tint); color: var(--blue-deep); display: grid; place-items: center; }
+.addr b { display: block; font-family: var(--display); font-weight: 700; color: var(--ink); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.addr p, .addr a { font-size: .98rem; }
+.addr a { color: var(--blue-deep); text-decoration: none; font-weight: 600; }
+.addr a:hover { text-decoration: underline; }
+.hours { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: .96rem; font-variant-numeric: tabular-nums; }
+.hours li { display: flex; justify-content: space-between; gap: 18px; max-width: 300px; }
+.hours span { color: var(--ink); font-weight: 600; }
+.serves { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.serves span { font-size: .86rem; background: var(--tint-soft); border: 1px solid var(--tint); color: var(--blue-ink); border-radius: 999px; padding: 5px 13px; }
+
+/* ---------------------------------------------------------------
+   CLOSING CTA
+   --------------------------------------------------------------- */
+.closer {
+  background:
+    radial-gradient(700px 380px at 12% 0%, rgba(0,145,213,.28) 0%, rgba(0,145,213,0) 60%),
+    var(--ink-deep);
+  color: #d6e3ec;
+  padding: clamp(52px, 5.5vw, 84px) 0;
+  text-align: center;
+}
+.closer h2 { color: #fff; margin-bottom: 14px; }
+.closer p { max-width: 58ch; margin: 0 auto 28px; font-size: 1.06rem; }
+.closer .cta-row { justify-content: center; }
+.closer__fine { margin-top: 22px; font-size: .86rem; color: #93aabb; }
+
+/* ---------------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------------- */
+.footer { background: #0b1a29; color: #93aabb; padding: 40px 0 30px; font-size: .89rem; }
+.footer__in { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr) minmax(0, 300px); gap: 34px; align-items: start; }
+@media (max-width: 860px) { .footer__in { grid-template-columns: 1fr; } }
+.footer img.logo { width: 132px; background: #fff; padding: 10px 12px; border-radius: var(--r-sm); }
+.footer p { line-height: 1.6; }
+.footer a { color: #bcd2e2; }
+.crisis {
+  border: 1px solid rgba(255,255,255,.18);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--r-sm);
+  padding: 15px 17px;
+  background: rgba(255,255,255,.04);
+}
+.crisis b { display: block; color: #fff; font-family: var(--display); font-weight: 700; margin-bottom: 5px; }
+.crisis a { font-weight: 700; color: #fff; }
+.footer__legal { margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: .82rem; }
+
+/* ---------------------------------------------------------------
+   MOBILE ACTION BAR
+   --------------------------------------------------------------- */
+.mobilebar { display: none; }
+@media (max-width: 720px) {
+  body { padding-bottom: 74px; }
+  .mobilebar {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 110;
+    background: rgba(255,255,255,.97);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line);
+    padding: 11px 14px calc(11px + env(safe-area-inset-bottom));
+    box-shadow: 0 -6px 22px rgba(17,35,55,.12);
+  }
+  .mobilebar .btn { padding: 14px 10px; font-size: .92rem; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#lead-form">Skip to the insurance check form</a>
+
+<!-- ================= STICKY HEADER ================= -->
+<header class="header" id="site-header">
+  <div class="wrap header__in">
+    <div class="brand">
+      <img src="https://hopesdestiny.com/wp-content/uploads/2024/06/ico-footer-logo.png" alt="Hope's Destiny" width="141" height="75">
+      <span class="brand__seal">
+        <img src="https://hopesdestiny.com/wp-content/uploads/2024/06/sdfg.png" alt="The Joint Commission Gold Seal of Approval" width="60" height="60">
+        Joint Commission<br>Accredited
+      </span>
+    </div>
+    <div class="header__cta">
+      <a class="header__tel" href="tel:+12159354191" data-track="call">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        <span>Speak to admissions</span>215-935-4191
+      </a>
+      <a class="btn btn--primary" href="#lead-form">Check My Coverage</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero__grid">
+
+    <div>
+      <p class="eyebrow">#EmbraceHope&nbsp;&nbsp;|&nbsp;&nbsp;Horsham, PA</p>
+      <h1>Outpatient mental health care for teens and adults, <em>close to home</em></h1>
+      <p class="hero__sub">
+        Hope's Destiny treats ADHD, anxiety, depression, trauma and co-occurring
+        substance use at every level of outpatient care, so you or your child can
+        get real clinical support while staying in school, at work and at home.
+      </p>
+
+      <ul class="ticks">
+        <li>
+          <span class="tick" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <span><strong>Separate adult and adolescent programs.</strong> Teens aged 13 to 17 are treated in their own groups, never mixed with adults.</span>
+        </li>
+        <li>
+          <span class="tick" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <span><strong>Psychiatry on site.</strong> Evaluation, diagnosis and medication management from a physician and a psychiatric nurse practitioner.</span>
+        </li>
+        <li>
+          <span class="tick" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <span><strong>No referral needed.</strong> Call or send the form and our admissions team schedules your assessment directly.</span>
+        </li>
+        <li>
+          <span class="tick" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <span><strong>Private and commercial insurance accepted.</strong> We verify your benefits before treatment begins.</span>
+        </li>
+      </ul>
+
+      <div class="cta-row">
+        <a class="btn btn--primary" href="#lead-form">Check My Coverage</a>
+        <a class="btn btn--ghost" href="tel:+12159354191" data-track="call">Call 215-935-4191</a>
+      </div>
+
+      <figure class="hero__photo">
+        <img src="https://hopesdestiny.com/wp-content/uploads/2025/04/Mask-Group-6-1052x702-1.png"
+             alt="A group therapy session at Hope's Destiny, two clients embracing while clinicians look on" width="1052" height="702">
+        <figcaption>Group, individual and family therapy at 601 Dresher Road, Horsham</figcaption>
+      </figure>
+    </div>
+
+    <!-- ---------- LEAD FORM ---------- -->
+    <aside class="formcard" id="lead-form">
+      <div class="formcard__top">
+        <h2>Check your insurance coverage</h2>
+        <p>Send four details and our admissions team will confirm your benefits and call you back.</p>
+      </div>
+
+      <form id="hd-form" novalidate>
+        <div class="field">
+          <label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="f-name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="field--pair">
+          <div class="field">
+            <label for="f-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="f-email" name="email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-who">Who needs care? <span class="req" aria-hidden="true">*</span></label>
+          <select id="f-who" name="who" required>
+            <option value="">Please choose</option>
+            <option>Myself</option>
+            <option>My child or teenager</option>
+            <option>My partner or spouse</option>
+            <option>Another family member</option>
+            <option>A client or student I work with</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-concern">What would you like help with?</label>
+          <select id="f-concern" name="concern">
+            <option value="">Optional</option>
+            <option>ADHD or focus and attention difficulties</option>
+            <option>Anxiety or panic</option>
+            <option>Depression or low mood</option>
+            <option>Trauma or PTSD</option>
+            <option>Alcohol or substance use</option>
+            <option>Mental health and substance use together</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-ins">Insurance carrier</label>
+          <input type="text" id="f-ins" name="insurance" placeholder="For example Aetna, Cigna, Independence Blue Cross">
+        </div>
+
+        <p class="formnote">
+          We accept private and commercial insurance and private pay only.
+          We are not able to accept Medicaid or Medicare at this time.
+        </p>
+
+        <label class="consent">
+          <input type="checkbox" id="f-consent" name="consent" value="yes" required>
+          <span>I agree to be contacted by Hope's Destiny by phone, text or email about
+          treatment options. Message rates may apply and I can opt out at any time.
+          Please do not include medical details in this form.</span>
+        </label>
+
+        <div class="hp" aria-hidden="true">
+          <label for="f-hp">Leave this field empty</label>
+          <input type="text" id="f-hp" name="company" tabindex="-1" autocomplete="off">
+        </div>
+
+        <p class="formerr" id="hd-error" role="alert" hidden></p>
+
+        <button type="submit" class="btn btn--primary btn--wide" id="hd-submit">Check My Coverage</button>
+
+        <p class="formcard__alt">
+          Prefer to talk now? <a href="tel:+12159354191" data-track="call">215-935-4191</a>
+        </p>
+      </form>
+
+      <div class="thanks" id="hd-thanks" hidden>
+        <div class="thanks__mark" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3>Thank you, we have your details</h3>
+        <p>Our admissions team will call you back to confirm your benefits and arrange an
+           assessment. If you would rather not wait, call us now.</p>
+        <a class="btn btn--primary" href="tel:+12159354191" data-track="call">Call 215-935-4191</a>
+      </div>
+
+      <div class="formcard__foot">
+        <span aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </span>
+        <span>Confidential and HIPAA compliant</span>
+        <span>No referral required</span>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ================= INSURANCE QUALIFIER ================= -->
+<section class="qualifier">
+  <div class="wrap qualifier__in">
+    <span class="qualifier__mark" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12l2 2 4-4"/></svg>
+    </span>
+    <div>
+      <p><strong>Private and commercial insurance accepted.</strong> We verify your benefits before treatment begins, and we also accept private pay.</p>
+      <p class="qualifier__note">Please note: Hope's Destiny is not able to accept Medicaid or Medicare at this time.</p>
+    </div>
+    <a class="btn btn--onDark" href="#insurance">See accepted plans</a>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust" aria-label="Credentials at a glance">
+  <div class="wrap trust__in">
+    <div class="trust__item">
+      <img src="https://hopesdestiny.com/wp-content/uploads/2024/06/sdfg.png" alt="The Joint Commission Gold Seal of Approval" width="60" height="60">
+      <span><b>Joint Commission accredited</b><small>Independently reviewed against national care standards</small></span>
+    </div>
+    <div class="trust__item">
+      <img src="https://hopesdestiny.com/wp-content/uploads/2024/06/02.png" alt="Pennsylvania Department of Human Services certification" width="60" height="60">
+      <span><b>Pennsylvania licensed</b><small>Certified by the PA Department of Human Services</small></span>
+    </div>
+    <div class="trust__item">
+      <span class="trust__ico" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+      </span>
+      <span><b>110+ years of combined experience</b><small>Physicians, nurse practitioners and licensed clinicians</small></span>
+    </div>
+    <div class="trust__item">
+      <span class="trust__ico" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      </span>
+      <span><b>One location, easy access</b><small>601 Dresher Road, Horsham, minutes from the turnpike</small></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHO WE HELP ================= -->
+<section class="band" id="who-we-help">
+  <div class="wrap">
+    <div class="head prose">
+      <p class="eyebrow">Who we help</p>
+      <h2>Care built around the person who needs it</h2>
+      <p class="lede">Adults and adolescents are treated in separate programs and separate
+      groups, with treatment plans written for the person in front of us rather than
+      a diagnosis on a form.</p>
+    </div>
+
+    <div class="grid grid--3">
+
+      <article class="card">
+        <div class="card__img">
+          <img src="https://hopesdestiny.com/wp-content/uploads/2025/04/shutterstock_2287598197.jpg"
+               alt="An adult client in an individual therapy session with a clinician" width="601" height="851" loading="lazy">
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Adults 18+</span>
+          <h3>Adult mental health and co-occurring care</h3>
+          <p>For adults managing ADHD, anxiety, depression, trauma or substance use, with
+          program hours that let you keep working.</p>
+          <ul class="card__list">
+            <li>Psychiatric evaluation and medication management</li>
+            <li>Individual, group, couples and family therapy</li>
+            <li>Treatment for mental health and substance use together</li>
+          </ul>
+          <p class="card__cta"><a href="#lead-form">Check my coverage</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__img">
+          <img src="https://hopesdestiny.com/wp-content/uploads/2025/04/Mask-Group-14.jpg"
+               alt="A teenage client talking with a clinician in a bright therapy room" width="455" height="824" loading="lazy">
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Teens 13 to 17</span>
+          <h3>Adolescent program</h3>
+          <p>Age appropriate therapy for teenagers, delivered in their own groups and
+          scheduled so school and family life continue.</p>
+          <ul class="card__list">
+            <li>ADHD, school refusal, anxiety, depression and self esteem</li>
+            <li>Dedicated adolescent PHP and IOP, never mixed with adult groups</li>
+            <li>Parents and caregivers included in the plan</li>
+          </ul>
+          <p class="card__cta"><a href="#lead-form">Ask about the teen program</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__img">
+          <img src="https://hopesdestiny.com/wp-content/uploads/2025/04/shutterstock_2231303815.jpg"
+               alt="Two family members sitting together and smiling during a family therapy session" width="601" height="741" loading="lazy">
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Parents and families</span>
+          <h3>When you are the one looking for help</h3>
+          <p>If you are trying to find care for your child, your partner or a parent and
+          do not know where to start, our admissions team will walk you through it.</p>
+          <ul class="card__list">
+            <li>We explain the levels of care in plain language</li>
+            <li>Benefits checked before anyone commits to anything</li>
+            <li>Family therapy and family involvement throughout</li>
+          </ul>
+          <p class="card__cta"><a href="#lead-form">Talk to admissions</a></p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE SUPPORT ================= -->
+<section class="band band--wash">
+  <div class="wrap">
+    <div class="head prose">
+      <p class="eyebrow">What we treat</p>
+      <h2>Mental health and substance use, treated together</h2>
+      <p class="lede">Mental health conditions and substance use are deeply connected, and
+      both deserve specialised care. When they appear together, which is common, we treat
+      both in one integrated plan rather than sending you to two places.</p>
+    </div>
+
+    <div class="chips">
+      <span class="chip chip--lead">ADHD, adults and teens</span>
+      <span class="chip">Anxiety and panic</span>
+      <span class="chip">Depression</span>
+      <span class="chip">Trauma and PTSD</span>
+      <span class="chip">Bipolar disorder</span>
+      <span class="chip">Co-occurring disorders</span>
+      <span class="chip">Alcohol use</span>
+      <span class="chip">Prescription drug use</span>
+      <span class="chip">Opioid and heroin use</span>
+      <span class="chip">Cocaine and stimulant use</span>
+      <span class="chip">Teen marijuana use</span>
+      <span class="chip">Grief and life stressors</span>
+    </div>
+
+    <div class="stepnote">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+      <p><strong>A co-occurring disorder</strong> means a mental health condition and a substance
+      use disorder are present at the same time. Each one feeds the other, which is why we
+      treat both together.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEVELS OF CARE ================= -->
+<section class="band" id="programs">
+  <div class="wrap">
+    <div class="head prose">
+      <p class="eyebrow">How we help</p>
+      <h2>Three levels of outpatient care, and the ability to move between them</h2>
+      <p class="lede">Your assessment determines where you start. As things improve you step
+      down, and if you need more support you step back up, without changing provider or
+      starting over with a new team.</p>
+    </div>
+
+    <div class="ladder">
+
+      <article class="rung rung--1">
+        <div class="rung__code">PHP<small>Most intensive</small></div>
+        <div>
+          <h3>Partial Hospitalization Program</h3>
+          <p>A structured daytime program with intensive therapeutic support and no overnight
+          stay. Suited to people stepping down from inpatient or detox care, or who need
+          considerably more than weekly therapy.</p>
+        </div>
+        <div class="rung__dose">
+          <div class="rung__hours">25 hrs / week</div>
+          <div class="rung__bar" aria-hidden="true"><i style="width:100%"></i></div>
+          <small>5 days a week, 5 hours a day</small>
+        </div>
+      </article>
+
+      <article class="rung rung--2">
+        <div class="rung__code">IOP<small>Step down</small></div>
+        <div>
+          <h3>Intensive Outpatient Program</h3>
+          <p>Therapy, education and peer support several days a week, blended so that work,
+          school and family responsibilities carry on. The usual next step after PHP.</p>
+        </div>
+        <div class="rung__dose">
+          <div class="rung__hours">9 to 15 hrs / week</div>
+          <div class="rung__bar" aria-hidden="true"><i style="width:52%"></i></div>
+          <small>3 to 5 days a week, 3 hours a day</small>
+        </div>
+      </article>
+
+      <article class="rung rung--3">
+        <div class="rung__code">OP<small>Maintain progress</small></div>
+        <div>
+          <h3>Outpatient Program</h3>
+          <p>Ongoing weekly support for people who have completed a higher level of care and
+          want to hold on to their progress, or whose needs are well met by regular sessions.</p>
+        </div>
+        <div class="rung__dose">
+          <div class="rung__hours">About 1 hr / week</div>
+          <div class="rung__bar" aria-hidden="true"><i style="width:12%"></i></div>
+          <small>Typically one session a week</small>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="grid grid--3" style="margin-top:22px">
+      <article class="card">
+        <div class="card__body">
+          <span class="card__tag">Psychiatry</span>
+          <h3>Psychiatric evaluation and medication management</h3>
+          <p>Our physician and psychiatric nurse practitioner assess, diagnose, prescribe where
+          appropriate, and adjust as your progress is monitored. Medication assisted treatment
+          is available for alcohol and opioid use disorders.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <span class="card__tag">Pharmacogenomics</span>
+          <h3>GeneSight testing</h3>
+          <p>Where it is clinically useful, GeneSight testing shows how your genetics may affect
+          your response to particular psychiatric medications, which shortens the trial and error
+          that many people dread most about starting treatment.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <span class="card__tag">Assessment</span>
+          <h3>Clinical and biopsychosocial assessment</h3>
+          <p>Every plan starts with a full assessment covering history, current symptoms, family
+          and social circumstances, so the level of care recommended is the one you actually
+          need, not the one that is easiest to place you in.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADJUNCTIVE THERAPIES ================= -->
+<section class="band band--tint">
+  <div class="wrap">
+    <div class="head prose">
+      <p class="eyebrow">Adjunctive therapies</p>
+      <h2>Six therapies most outpatient centres nearby do not offer</h2>
+      <p class="lede">These run alongside your clinical treatment, not instead of it. They engage
+      the body as well as the mind, which matters for the many people who find talking about
+      it is not enough on its own.</p>
+    </div>
+
+    <div class="therapies">
+      <article class="therapy">
+        <span class="therapy__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.4"/><path d="M12 7.4v5.2"/><path d="m5 10 7 2.6 7-2.6"/><path d="m8 21 4-8.4 4 8.4"/></svg></span>
+        <h3>Yoga therapy</h3>
+        <p>Gentle movement and breathwork to reconnect with the body, manage anxiety, depression
+        and trauma responses, and build self awareness in a safe space.</p>
+      </article>
+      <article class="therapy">
+        <span class="therapy__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+        <h3>Music therapy</h3>
+        <p>Listening, songwriting and rhythm work that gives people a way to express feelings
+        and process trauma without having to find the words first.</p>
+      </article>
+      <article class="therapy">
+        <span class="therapy__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 0 0 0 20c1.4 0 2.5-1.1 2.5-2.5 0-.6-.2-1.2-.6-1.6-.4-.5-.6-1-.6-1.6 0-1.4 1.1-2.5 2.5-2.5H19a3 3 0 0 0 3-3 10 10 0 0 0-10-9Z"/></svg></span>
+        <h3>Art therapy</h3>
+        <p>A safe way to explore emotions and process experiences through making things,
+        particularly useful for people who struggle to say how they feel out loud.</p>
+      </article>
+      <article class="therapy">
+        <span class="therapy__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 8-4-16-3 8H2"/></svg></span>
+        <h3>Biofeedback</h3>
+        <p>Real time monitoring that teaches control over physical responses such as heart rate
+        and muscle tension. Effective for managing anxiety and trauma responses.</p>
+      </article>
+      <article class="therapy">
+        <span class="therapy__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="8" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="9.5" cy="4.5" r="2"/><circle cx="14.5" cy="4.5" r="2"/><path d="M12 10c-3 0-5.5 2.4-5.5 5.3 0 2 1.4 3.7 3.3 3.7.9 0 1.5-.4 2.2-.4s1.3.4 2.2.4c1.9 0 3.3-1.7 3.3-3.7C17.5 12.4 15 10 12 10Z"/></svg></span>
+        <h3>Pet therapy</h3>
+        <p>Therapy animals reduce stress, anxiety and isolation, and create an easier way in for
+        people managing depression or trauma.</p>
+      </article>
+      <article class="therapy">
+        <span class="therapy__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0-9-9c0 2 .6 3.8 1.7 5.2"/><path d="M8 14c1.5 1.5 2.5 2 4 2s2.5-.5 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg></span>
+        <h3>Somatic re-experiencing</h3>
+        <p>Gentle body awareness techniques that release physical trauma held in the body.
+        Used for PTSD, complex trauma and long standing emotional difficulty.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AUTHORITY / TEAM ================= -->
+<section class="band band--dark" id="team">
+  <div class="wrap">
+    <div class="head prose">
+      <p class="eyebrow">Who you will be working with</p>
+      <h2>Senior clinicians, not a rotating roster</h2>
+      <p class="lede">Hope's Destiny is deliberately small. The people who lead the clinical work
+      are the people you meet.</p>
+    </div>
+
+    <div class="team">
+      <article class="person">
+        <div class="person__photo">
+          <img src="https://hopesdestiny.com/wp-content/uploads/2026/01/jeffrey.webp"
+               alt="Dr Jeffrey Berman, Medical Director at Hope's Destiny" loading="lazy">
+        </div>
+        <div class="person__body">
+          <p class="person__role">Medical Director</p>
+          <h3>Jeffrey A. Berman, MD, DFASAM</h3>
+          <p>Among the first physicians certified by the American Society of Addiction Medicine,
+          and a contributor to the first edition of the ASAM Patient Placement Criteria. Clinical
+          Assistant Professor at Rutgers Robert Wood Johnson Medical School.</p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person__photo">
+          <img src="https://hopesdestiny.com/wp-content/uploads/2026/03/3570883B-C576-450C-8837-8DB9FE2B6023.png"
+               alt="Danette Mitchell, Clinical Director at Hope's Destiny" loading="lazy">
+        </div>
+        <div class="person__body">
+          <p class="person__role">Clinical Director</p>
+          <h3>Danette Mitchell, LPC</h3>
+          <p>Licensed Professional Counsellor specialising in co-occurring conditions, anxiety and
+          trauma, with extensive experience across PHP, IOP and outpatient levels of care and in
+          clinical supervision and program development.</p>
+        </div>
+      </article>
+
+      <article class="person">
+        <div class="person__photo">
+          <img src="https://hopesdestiny.com/wp-content/uploads/2025/04/Patricia-Allen-Headshot-480x601-1-423x404-1.png"
+               alt="Patricia Allen, Psychiatric Nurse Practitioner at Hope's Destiny" loading="lazy">
+        </div>
+        <div class="person__body">
+          <p class="person__role">Psychiatric Nurse Practitioner</p>
+          <h3>Patricia Allen, PMHNP</h3>
+          <p>Leads psychiatric evaluation and ongoing medication management for adults and
+          adolescents, working alongside the clinical team so prescribing and therapy stay
+          joined up rather than running in parallel.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="figures">
+      <div class="figure"><b>110+</b><span>Years of combined clinical experience across the team</span></div>
+      <div class="figure"><b>3</b><span>Levels of outpatient care under one roof, so you never change provider to step down</span></div>
+      <div class="figure"><b>2</b><span>Separate age tracks, adults and adolescents, with their own groups</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACCREDITATIONS ================= -->
+<section class="band" id="accreditation">
+  <div class="wrap">
+    <div class="head prose">
+      <p class="eyebrow">Accreditation and recognition</p>
+      <h2>Independently accredited, licensed and reviewed</h2>
+      <p class="lede">Accreditation is not marketing. It means an outside body has examined how
+      this facility actually delivers care. Ours can be verified directly.</p>
+    </div>
+
+    <div class="creds">
+      <a class="cred" href="https://www.jointcommission.org/en-us/about-us/recognizing-excellence/find-accredited-organizations/708089" target="_blank" rel="noopener">
+        <span class="cred__frame"><img src="https://hopesdestiny.com/wp-content/uploads/2024/06/sdfg.png" alt="The Joint Commission Gold Seal of Approval" loading="lazy"></span>
+        <b>The Joint Commission</b>
+        <small>Gold Seal of Approval. Verify our accreditation on the Joint Commission register.</small>
+      </a>
+      <div class="cred">
+        <span class="cred__frame"><img src="https://hopesdestiny.com/wp-content/uploads/2024/06/02.png" alt="Pennsylvania Department of Human Services certification" loading="lazy"></span>
+        <b>PA Dept. of Human Services</b>
+        <small>Certified provider in the Commonwealth of Pennsylvania.</small>
+      </div>
+      <div class="cred">
+        <span class="cred__frame"><img src="https://hopesdestiny.com/wp-content/uploads/2024/06/Mask-Group-33.png" alt="Commonwealth of Pennsylvania seal" loading="lazy"></span>
+        <b>Commonwealth of Pennsylvania</b>
+        <small>Licensed to deliver behavioural health treatment in Pennsylvania.</small>
+      </div>
+      <div class="cred">
+        <span class="cred__frame"><img src="https://hopesdestiny.com/wp-content/uploads/2025/03/svgviewer-png-output.png" alt="Psychology Today verified listing" loading="lazy"></span>
+        <b>Psychology Today</b>
+        <small>Verified treatment centre listing with credentials confirmed.</small>
+      </div>
+      <div class="cred">
+        <span class="cred__frame"><img src="https://hopesdestiny.com/wp-content/uploads/2024/06/Chamber_Logo1.jpg" alt="Chamber of Commerce member" loading="lazy"></span>
+        <b>Chamber of Commerce</b>
+        <small>Active member of the local business community we serve.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="band band--wash" id="testimonials">
+  <div class="wrap">
+    <div class="head prose">
+      <p class="eyebrow">In their words</p>
+      <h2>What families say about the care here</h2>
+      <p class="lede">Treatment is personal, so we ask people to tell it their way. Names are
+      shortened and details are withheld to protect privacy.</p>
+    </div>
+
+    <div class="quotes">
+      <!--
+        ==============================================================
+        PLACEHOLDER TESTIMONIALS. DO NOT PUBLISH AS THEY STAND.
+        hopesdestiny.com carries no reviews, testimonials or
+        aggregateRating anywhere on the site or in its schema, so
+        there was no approved wording to carry over to this page.
+        Replace each slot with a real quote the client has cleared,
+        or delete this whole section before the ads go live.
+        ==============================================================
+      -->
+      <figure class="quote">
+        <p class="quote__stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <blockquote><span class="slot">Client quote needed</span> Replace with a cleared quote from a parent about the adolescent program, ideally mentioning school continuing during treatment.</blockquote>
+        <figcaption><span class="slot">Name and relationship</span></figcaption>
+      </figure>
+      <figure class="quote">
+        <p class="quote__stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <blockquote><span class="slot">Client quote needed</span> Replace with a cleared quote from an adult client about stepping down from PHP to IOP, or about medication management.</blockquote>
+        <figcaption><span class="slot">Name and relationship</span></figcaption>
+      </figure>
+      <figure class="quote">
+        <p class="quote__stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <blockquote><span class="slot">Client quote needed</span> Replace with a cleared quote about the adjunctive therapies, or about how the admissions and insurance process felt.</blockquote>
+        <figcaption><span class="slot">Name and relationship</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="buildnote">
+      <b>Note for the build team, remove before launch.</b>
+      There are no testimonials, reviews or star ratings anywhere on hopesdestiny.com or in its
+      structured data, so nothing could be carried across to this page. Three cleared quotes are
+      needed from the client. Until they arrive, either fill these slots or delete the section
+      entirely. Do not publish placeholder wording, and do not write quotes on the client's
+      behalf.
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="head prose">
+      <p class="eyebrow">Getting started</p>
+      <h2>Three steps, and the first one takes two minutes</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <p class="step__n"><i>1</i> Reach out</p>
+        <h3>Call or send the form</h3>
+        <p>No referral is needed. Send four details or call 215-935-4191 and speak to our
+        admissions team directly. You do not need to know which program you need.</p>
+      </div>
+      <div class="step">
+        <p class="step__n"><i>2</i> Benefits checked</p>
+        <h3>We verify your insurance</h3>
+        <p>Our team confirms what your plan covers and what, if anything, you would pay, before
+        you commit to treatment. No surprises later.</p>
+      </div>
+      <div class="step">
+        <p class="step__n"><i>3</i> Assessment booked</p>
+        <h3>Meet the clinical team</h3>
+        <p>A full clinical assessment determines the right level of care, PHP, IOP or OP, and
+        your treatment plan is written from there.</p>
+      </div>
+    </div>
+
+    <div class="cta-row" style="margin-top:34px">
+      <a class="btn btn--primary" href="#lead-form">Start with step one</a>
+      <a class="btn btn--ghost" href="tel:+12159354191" data-track="call">Call 215-935-4191</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSURANCE ================= -->
+<section class="band band--tint" id="insurance">
+  <div class="wrap">
+    <div class="head prose" style="text-align:center; margin-left:auto; margin-right:auto">
+      <p class="eyebrow" style="justify-content:center">Insurance</p>
+      <h2>Accessible care through trusted insurance partners</h2>
+      <p class="lede">We work with most major private and commercial plans and verify your
+      benefits before treatment begins.</p>
+    </div>
+
+    <div class="payers">
+      <img src="https://hopesdestiny.com/wp-content/uploads/2025/03/aetna.jpg" alt="Aetna" loading="lazy">
+      <img src="https://hopesdestiny.com/wp-content/uploads/2025/03/bcbs.jpg" alt="Blue Cross Blue Shield" loading="lazy">
+      <img src="https://hopesdestiny.com/wp-content/uploads/2025/03/cigna.webp" alt="Cigna" loading="lazy">
+      <img src="https://hopesdestiny.com/wp-content/uploads/2025/04/Allied-Trades-Logo-1.png" alt="Allied Trades Assistance Program" loading="lazy">
+      <span class="pill">Independence Blue Cross</span>
+      <span class="pill">AmeriHealth</span>
+      <span class="pill">Highmark</span>
+      <span class="pill">Horizon BCBS</span>
+      <span class="pill">ComPsych</span>
+    </div>
+
+    <p style="text-align:center; margin-top:28px; font-size:.95rem;">
+      Do not see your plan? We will still check it.
+      <a href="#lead-form" style="font-weight:600">Send your details</a>
+      or call <a href="tel:+12159354191" data-track="call" style="font-weight:600">215-935-4191</a>.
+    </p>
+    <p style="text-align:center; margin-top:10px; font-size:.9rem; color:var(--body)">
+      Private and commercial insurance and private pay only. Medicaid and Medicare are not
+      accepted at this time.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="head prose">
+      <p class="eyebrow">Frequently asked questions</p>
+      <h2>The answers people want before they pick up the phone</h2>
+    </div>
+
+    <div class="faq">
+      <details open>
+        <summary>Do you accept Medicaid or Medicare? <i aria-hidden="true">+</i></summary>
+        <div class="faq__a">
+          <p>No. Hope's Destiny is not able to accept Medicaid or Medicare at this time. We work
+          with private and commercial insurance plans, and we also accept private pay. If you are
+          not sure which category your plan falls into, send us your details and we will check it
+          for you at no cost.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Do you treat ADHD? <i aria-hidden="true">+</i></summary>
+        <div class="faq__a">
+          <p>Yes, for both adults and adolescents. Care can include psychiatric evaluation,
+          diagnosis, medication management and ongoing therapy, and for students it can be
+          scheduled around school hours. ADHD frequently appears alongside anxiety, depression or
+          substance use, and where it does we treat those together rather than in isolation.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>My teenager needs help. How does the adolescent program work? <i aria-hidden="true">+</i></summary>
+        <div class="faq__a">
+          <p>Teenagers aged 13 to 17 are treated in their own PHP and IOP groups, kept entirely
+          separate from adult groups. Therapy is age appropriate, parents and caregivers are
+          brought into the plan, and hours are arranged so that school continues wherever
+          possible.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Do I need a referral to get started? <i aria-hidden="true">+</i></summary>
+        <div class="faq__a">
+          <p>No referral is needed. You can contact us directly to schedule an initial
+          assessment. Our admissions team will guide you through the process and help determine
+          the right level of care.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I know if I need professional help? <i aria-hidden="true">+</i></summary>
+        <div class="faq__a">
+          <p>It is worth reaching out if you are experiencing persistent changes in mood,
+          behaviour or daily functioning that affect your quality of life. Common signs include:</p>
+          <ul>
+            <li>Feeling overwhelmed, hopeless or unable to cope</li>
+            <li>Changes in sleep or eating patterns</li>
+            <li>Difficulty maintaining relationships or responsibilities</li>
+            <li>Using substances to manage emotions</li>
+            <li>Having thoughts of self harm</li>
+          </ul>
+          <p>If you are in immediate crisis, call or text 988 to reach the Suicide and Crisis
+          Lifeline, available 24 hours a day.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What is a co-occurring disorder? <i aria-hidden="true">+</i></summary>
+        <div class="faq__a">
+          <p>A co-occurring disorder means someone is experiencing both a mental health condition
+          and a substance use disorder at the same time. These conditions affect each other, so we
+          treat both together to support long term recovery.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What kinds of therapy do you provide? <i aria-hidden="true">+</i></summary>
+        <div class="faq__a">
+          <p>Evidence based therapies including individual and group sessions, CBT, DBT and
+          mindfulness techniques, alongside family support, couples therapy, medication management
+          and psychiatric care. We also offer a full range of adjunctive therapies: yoga therapy,
+          music therapy, art therapy, biofeedback, pet therapy and somatic re-experiencing.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Is treatment confidential? <i aria-hidden="true">+</i></summary>
+        <div class="faq__a">
+          <p>Absolutely. Your privacy is very important to us. All of your information is kept
+          confidential in accordance with HIPAA and other legal standards.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Where are you, and how far do people travel? <i aria-hidden="true">+</i></summary>
+        <div class="faq__a">
+          <p>We are at 601 Dresher Road, Suite 105, Horsham, PA 19044, just off the highway with
+          easy parking. Most of our clients come from Horsham and the surrounding Montgomery and
+          Bucks County communities, including Abington, Doylestown, Lansdale, Warminster, Willow
+          Grove and North Philadelphia.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section class="band band--wash" id="location">
+  <div class="wrap locate">
+    <div>
+      <p class="eyebrow">Visit us</p>
+      <h2>One centre, on Dresher Road in Horsham</h2>
+      <p class="lede" style="margin-top:12px; max-width:56ch">
+        All programs run from a single location, so your team stays the same whether you are in
+        PHP, IOP or weekly outpatient sessions. Parking is on site and we are minutes from the
+        Pennsylvania Turnpike.
+      </p>
+      <div class="serves">
+        <span>Horsham</span><span>Abington</span><span>Doylestown</span><span>Lansdale</span>
+        <span>Warminster</span><span>Willow Grove</span><span>Ambler</span><span>Hatboro</span>
+        <span>Jenkintown</span><span>Fort Washington</span><span>North Wales</span>
+        <span>North Philadelphia</span>
+      </div>
+      <div class="cta-row" style="margin-top:26px">
+        <a class="btn btn--primary" href="#lead-form">Check My Coverage</a>
+        <a class="btn btn--ghost" href="https://maps.google.com/?q=601+Dresher+Rd+Suite+105+Horsham+PA+19044" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+
+    <div class="addr">
+      <div class="addr__row">
+        <span class="addr__ico" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <div>
+          <b>Address</b>
+          <p>601 Dresher Road, Suite 105<br>Horsham, PA 19044</p>
+        </div>
+      </div>
+      <div class="addr__row">
+        <span class="addr__ico" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        </span>
+        <div>
+          <b>Admissions</b>
+          <p><a href="tel:+12159354191" data-track="call">215-935-4191</a></p>
+        </div>
+      </div>
+      <div class="addr__row">
+        <span class="addr__ico" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </span>
+        <div>
+          <b>Program hours</b>
+          <ul class="hours">
+            <li>Monday to Thursday <span>8:00 am to 8:00 pm</span></li>
+            <li>Friday <span>8:00 am to 5:00 pm</span></li>
+            <li>Saturday and Sunday <span>Closed</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLOSING CTA ================= -->
+<section class="closer">
+  <div class="wrap">
+    <h2>You do not have to work out which program you need</h2>
+    <p>That is our job. Send four details or call us, and our admissions team will check your
+    insurance, explain the options in plain language and book your assessment.</p>
+    <div class="cta-row">
+      <a class="btn btn--onDark" href="#lead-form">Check My Coverage</a>
+      <a class="btn btn--outlineDark" href="tel:+12159354191" data-track="call">Call 215-935-4191</a>
+    </div>
+    <p class="closer__fine">Confidential. No referral needed. Private and commercial insurance accepted.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__in">
+      <div>
+        <img class="logo" src="https://hopesdestiny.com/wp-content/uploads/2024/06/ico-footer-logo.png" alt="Hope's Destiny" width="141" height="75">
+      </div>
+      <div>
+        <p>Hope's Destiny in Horsham, PA, offers evidence based outpatient care for mental health
+        and co-occurring disorders, empowering lasting change through compassionate treatment.</p>
+        <p style="margin-top:12px">601 Dresher Road, Suite 105, Horsham, PA 19044<br>
+        Admissions <a href="tel:+12159354191" data-track="call">215-935-4191</a></p>
+      </div>
+      <div class="crisis">
+        <b>In crisis right now?</b>
+        <p>Call or text <a href="tel:988">988</a> for the Suicide and Crisis Lifeline, free and
+        available 24 hours a day. In an emergency call 911.</p>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>&copy; 2026 Hope's Destiny. All rights reserved.</span>
+      <a href="https://hopesdestiny.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+      <a href="https://hopesdestiny.com/terms-of-service/" target="_blank" rel="noopener">Terms of Service</a>
+      <a href="https://hopesdestiny.com/" target="_blank" rel="noopener">hopesdestiny.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MOBILE ACTION BAR ================= -->
+<div class="mobilebar">
+  <a class="btn btn--ghost" href="tel:+12159354191" data-track="call">Call now</a>
+  <a class="btn btn--primary" href="#lead-form">Check coverage</a>
+</div>
+
+<script>
+/* =================================================================
+   HOPE'S DESTINY LANDING PAGE  |  BEHAVIOUR AND TRACKING
+
+   The site's existing Meta Pixel only fires PageView, which is why
+   the ad account cannot optimise for enquiries. This page fires a
+   real Lead event on form submission and a Contact event on every
+   click of a phone number, so Meta has a conversion to learn from.
+
+   SET THIS BEFORE LAUNCH:
+   formEndpoint must point at whatever receives the lead (a Gravity
+   Forms REST endpoint, a Zapier or Make webhook feeding the shared
+   tracking sheet, or a small server script). While it is empty the
+   form validates and shows the thank you state but sends nothing.
+   ================================================================= */
+window.HD = {
+  formEndpoint: "",                        /* <-- REQUIRED before launch */
+  metaPixelId: "1263592818171962",         /* client's existing pixel */
+  ga4Id: "GT-W6N7HLB",                     /* client's existing Google tag */
+  loadTracking: true                       /* set false for local previews */
+};
+
+/* ---------- Meta Pixel ---------- */
+(function () {
+  if (!window.HD.loadTracking || !window.HD.metaPixelId) return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', window.HD.metaPixelId);
+  fbq('track', 'PageView');
+})();
+
+/* ---------- Google tag (GA4) ---------- */
+(function () {
+  if (!window.HD.loadTracking || !window.HD.ga4Id) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.HD.ga4Id;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', window.HD.ga4Id);
+})();
+
+function hdTrack(metaEvent, ga4Event, params) {
+  try { if (window.fbq) fbq('track', metaEvent, params || {}); } catch (e) {}
+  try { if (window.gtag) gtag('event', ga4Event, params || {}); } catch (e) {}
+  try { (window.dataLayer = window.dataLayer || []).push(Object.assign({ event: ga4Event }, params || {})); } catch (e) {}
+}
+
+/* ---------- Header shadow on scroll ---------- */
+(function () {
+  var header = document.getElementById('site-header');
+  var onScroll = function () {
+    header.classList.toggle('is-stuck', window.scrollY > 12);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
+/* ---------- Phone clicks count as conversions ---------- */
+document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a[data-track="call"]');
+  if (!link) return;
+  hdTrack('Contact', 'call_click', {
+    content_name: 'Meta LP phone click',
+    phone: link.getAttribute('href').replace('tel:', '')
+  });
+});
+
+/* ---------- FAQ accordion, one open at a time ---------- */
+(function () {
+  var all = Array.prototype.slice.call(document.querySelectorAll('.faq details'));
+  all.forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (!d.open) return;
+      all.forEach(function (other) { if (other !== d) other.open = false; });
+    });
+  });
+})();
+
+/* ---------- Lead form ---------- */
+(function () {
+  var form = document.getElementById('hd-form');
+  var thanks = document.getElementById('hd-thanks');
+  var errBox = document.getElementById('hd-error');
+  var submit = document.getElementById('hd-submit');
+  if (!form) return;
+
+  function fail(message) {
+    errBox.textContent = message;
+    errBox.hidden = false;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    errBox.hidden = true;
+
+    if (form.company.value) return;                 /* honeypot caught a bot */
+
+    var name = form.name.value.trim();
+    var phone = form.phone.value.trim();
+    var email = form.email.value.trim();
+
+    if (name.length < 2) return fail('Please enter your full name.');
+    if (phone.replace(/\D/g, '').length < 10) return fail('Please enter a phone number we can reach you on.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return fail('Please enter a valid email address.');
+    if (!form.who.value) return fail('Please tell us who needs care.');
+    if (!form.consent.checked) return fail('Please agree to be contacted so we can call you back.');
+
+    var params = new URLSearchParams(window.location.search);
+    var payload = {
+      name: name,
+      phone: phone,
+      email: email,
+      who: form.who.value,
+      concern: form.concern.value,
+      insurance: form.insurance.value.trim(),
+      consent: true,
+      page: 'Meta Ads Landing Page',
+      submitted_at: new Date().toISOString(),
+      utm_source: params.get('utm_source') || 'meta',
+      utm_medium: params.get('utm_medium') || 'paid_social',
+      utm_campaign: params.get('utm_campaign') || '',
+      utm_content: params.get('utm_content') || '',
+      fbclid: params.get('fbclid') || '',
+      referrer: document.referrer || ''
+    };
+
+    submit.disabled = true;
+    submit.textContent = 'Sending...';
+
+    function done() {
+      hdTrack('Lead', 'generate_lead', {
+        content_name: 'Meta LP insurance check',
+        content_category: payload.concern || 'unspecified',
+        value: 0,
+        currency: 'USD'
+      });
+      form.hidden = true;
+      thanks.hidden = false;
+      thanks.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    if (!window.HD.formEndpoint) {
+      console.warn('HD.formEndpoint is not set. The lead was not sent anywhere.', payload);
+      done();
+      return;
+    }
+
+    fetch(window.HD.formEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        done();
+      })
+      .catch(function () {
+        submit.disabled = false;
+        submit.textContent = 'Check My Coverage';
+        fail('We could not send that just now. Please call 215-935-4191 and we will take your details over the phone.');
+      });
+  });
+})();
+</script>
+
+</body>
+</html>
